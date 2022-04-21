@@ -1,208 +1,161 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <title>Laravel</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <body>
+    <section class="hero-section">
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.dark\:text-gray-500{--tw-text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--tw-text-opacity))}}
-        </style>
+      <nav class="navbar">
+        <h2>Vendor Selection</h2>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </nav>
+      <div class="hero-text">
+        <p class="mt">Vendor Selection Made Easy!</p>
+        <h3 class="subt">Select from 1000s of prodcuts based on people's reviews</h3>
+        <a href="#">Login</a>
+      </div>
+    </section>
+  </body>
+  <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+:root {
+  --text: 1.5rem;
+  --head: calc(1rem + 5vw);
+  --bg-color: #f6b93b;
+}
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+body {
+  font-family: "Poppins", sans-serif;
+}
 
-            <body>
-    <div class="container">
-        <div class="header">
-            <img src="images/logo.png" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Community</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="btn" id="btn1">Log In</button>
-            <button class="btn" id="btn2">Sign Up</button>
-        </div>
-        <div class="content">
-            <div class="text">
-            <h1>Be Young, Have Fun, <br> <span>Drink Pepsi</span></h1>
-            <p>Pepsi is a carbonated soft drink manufactured by PepsiCo. <br>Originally created and developed in 1893 by Caleb Bradham <br>and introduced as Brad's Drink, it was renamed as Pepsi-Cola in 1898, and then shortened to Pepsi in 1961.
-            </p>
-            <button class="btn3">Buy Now</button>
-           </div>
-        <div class="pepsi">
-        <img src="images/pepsi.png" alt="">
-        </div>
-       </div>
-   </div>
+.hero-section {
+  min-height: 100vh;
+  background: url("https://3ggqje2jhgjp45f9yd48ay211i1-wpengine.netdna-ssl.com/wp-content/themes/shift-theme/page-templates/media/b2b-marketplace-background.ec971d4c.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+  animation: slide 1s ease-in-out;
+}
 
-    </body>
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0rem 1.5rem;
+  color: white;
+  transform: translateY(-100%);
+  animation: movedown 850ms ease-in 1s forwards;
 }
-.container {
-    height: 100vh;
-    width: 100%;
-    background-image: url(images/bg.png);
-    background-position: center;
-    background-size: cover;
-    padding-right: 3%;
-    padding-left: 5%;
-    box-sizing: border-box;
-    position: relative;
+
+@keyframes movedown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
-.header {
-    width: 100%;
-    height: 15vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
+
+.navbar ul {
+  list-style: none;
 }
-.logo {
-    width: 80px;
-    margin-top: 10px;
-    cursor: pointer;
+
+.navbar ul li {
+  display: inline-block;
+  margin-left: 3rem;
+  font-size: var(--text);
 }
-nav {
-    flex: 1;
-    padding-left: 450px;
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
 }
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 15px;
+
+.navbar ul li a:hover {
+  border-bottom: 2px solid var(--bg-color);
 }
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 600;
+
+.mt{
+font-size: 1.5rem;
+font-weight: bold;
 }
-#btn1 {
-    text-transform: uppercase;
-    background: linear-gradient(to bottom, #378de5 3%, #48789b 100%);
-    border-radius: 30px;
-    border: 1px solid #5e97d1;
-    cursor: pointer;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    padding: 12px 20px;
-    margin: 10px;
-    text-decoration: none;
-    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
-    text-shadow: 0px 1px 0px #528ecc;
+
+.subt{
+    font-weight:0;
 }
-#btn2 {
-    text-transform: uppercase;
-    background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
-    border-radius: 30px;
-    border: 1px solid #cbcbcb;
-    cursor: pointer;
-    color: #5e97d1;
-    font-family: 'Poppins', sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    padding: 12px 20px;
-    margin: 10px;
-    text-decoration: none;
-    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
-    text-shadow: 0px 1px 0px #cbcbcb;
+.hero-text {
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.btn:hover {
-    box-shadow: 3px 8px 22px rgba(94,28,68,.15);
-    transform: scale(1.1);
-    transition: .2s ease-in-out;
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
-.content {
-    position: relative;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+
+.hero-text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  top: 0;
+  opacity: 0.6;
 }
-.content .text {
-    position: relative;
-    max-width: 600px;
+
+.hero-text a {
+  color: white;
+  background: var(--bg-color);
+  font-weight: 900;
+  font-size: var(--text);
+  padding: 0.8rem 1rem;
+  margin: 0.8rem auto;
+  display: block;
+  text-decoration: none;
+  transition: opacity 250ms linear;
 }
-.content .text h1 {
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 80px;
-    line-height: 1.5em;
-    letter-spacing: .1em;
-    font-size: 40px;
-    color: #fff;
+
+.hero-text a:hover {
+  opacity: 0.8;
 }
-.content .text h1 span {
-    font-size: 50px;
+
+.hero-text h2 {
+  font-size: var(--head);
 }
-.content .text p {
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: .1em;
-    margin-top: 40px;
-    color: #e7e3e3;
- }
-.btn3 {
-    background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
-    margin-top: 60px;
-    margin-left: 140px;
-    padding: 15px 30px;
-    text-align: center;
-    transition: .5s;
-    border: none;
-    outline: none;
-    text-transform: uppercase;
-    color: #1b1b1b;
-    font-size: 20px;
-    font-weight: 700;
-    border-radius: 30px;
-    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+
+.hero-text p {
+  font-size: 3rem;
 }
-.pepsi {
-    display: flex;
-    height: 100%;
-    position: absolute;
-    width: 600px;
-    margin-top: 80px;
-    padding-left: 440px;
-    justify-content: flex-end;
-}
-    </style>
+
+  </style>
+
 </html>
