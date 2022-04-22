@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-    <h3>Search Results</h3>
+    
     <div class="products">
     <img class="timg" 
     
@@ -22,9 +22,9 @@
 
 <div class="p"><p>Echo your sentiment analysis in this div. It will be center aligned altogether</p> <br>
     
-     <p>Example <span><br></span> Name:Aadarsh <span><br></span> Product:Major Project <span><br></span> Review:Working!!!</p>
-    <p>Example <span><br></span> Name:Aliya <span><br></span> Product:Major Project <span><br></span> Review:Working!!!</p>
-    <p>Example <span><br></span> Name:Anushka<span><br></span> Product:Major Project <span><br></span> Review:Working!!!</p>
+     <p>Example <span><br></span> Name:Aadarsh <span><br></span> Product:Major Project <span><br></span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem repellendus adipisci quas, omnis quasi unde corrupti quia in aut labore fuga, veritatis consectetur voluptatum quisquam suscipit quaerat aliquam id voluptates reprehenderit impedit tempore libero reiciendis? Doloribus consequatur consectetur, beatae dignissimos, reprehenderit natus ex eius odio, soluta quaerat blanditiis! Voluptatem.</p>
+    <p>Example <span><br></span> Name:Aliya <span><br></span> Product:Major Project <span><br></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut atque veritatis nulla quidem provident est earum repudiandae, reiciendis, nihil eum id? Ratione atque beatae porro minus nemo soluta illo consequatur facilis vero voluptatum, unde doloribus quod recusandae nulla minima sapiente suscipit reprehenderit est officiis voluptates! Beatae sunt sint aspernatur?</p>
+    <p>Example <span><br></span> Name:Anushka<span><br></span> Product:Major Project <span><br></span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus rem recusandae officiis natus eius at vero asperiores iure? Veniam omnis libero reiciendis neque! Beatae nemo iusto natus, nesciunt tenetur ipsa nostrum ipsam, veniam labore, autem dolorum veritatis atque temporibus optio explicabo? Iste, hic mollitia. Sit eveniet deserunt enim distinctio commodi.</p>
    
 </div>
 
@@ -46,9 +46,9 @@
 
     .p{
         margin-top:2rem;
-  padding:2rem;
+        margin-left:-100px;
+  padding-top:2rem;
   justify-content: center;
   align-items: center;
-  text-align: center;
-    }
+  text-align: centerleft
 </style>
